@@ -167,17 +167,17 @@ function updateForecast(data, unit, type) {
 // function to change weather icons
 function getIcon(condition) {
     if (condition === "partly-cloudy-day") {
-        return "./icon/cloudyDay.png";
+        return "./cloudyDay.png";
     } else if (condition === "partly-cloudy-night") {
-        return ".icon/loudyNight.png";
+        return "./loudyNight.png";
     } else if (condition === "rain") {
-        return "./icon/rainy.png";
+        return "./rainy.png";
     } else if (condition === "clear-day") {
-        return "./icon/sunny.png";
+        return "./sunny.png";
     } else if (condition === "clear-night") {
-        return "./icon/clearNight.png";
+        return "./clearNight.png";
     } else {
-        return "./icon/sunny.png";
+        return "./sunny.png";
     }
 }
 
@@ -186,17 +186,17 @@ function changeBackground(condition) {
     const body = document.querySelector("body");
     let bg = "";
     if (condition === "partly-cloudy-day") {
-        bg = "./image/cloud3.jpg";
+        bg = "./cloud3.jpg";
     } else if (condition === "partly-cloudy-night") {
-        bg = "./image/pcn.jpg";
+        bg = "./pcn.jpg";
     } else if (condition === "rain") {
-        bg = ".image/rain.webp";
+        bg = "./rain.webp";
     } else if (condition === "clear-day") {
-        bg = "./image/cd.jpg";
+        bg = "./cd.jpg";
     } else if (condition === "clear-night") {
-        bg = "./image/cn.jpg";
+        bg = "./cn.jpg";
     } else {
-        bg = "./image/pc.webp";
+        bg = "./pc.webp";
     }
     body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${bg})`;
 }

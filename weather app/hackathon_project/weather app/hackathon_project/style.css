@@ -17,7 +17,7 @@ body {
     min-width: 1000px;
     padding: 50px;
     background: var(--primary-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/cd.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./cd.jpg");
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease;
